@@ -58,4 +58,6 @@ Add Week_Day nvarchar(255);
 Update [202108]
 SET Week_Day = DATENAME(WEEKDAY, started_at)
 
-
+--Dropping started_at column
+ALTER TABLE [202108]
+DROP COLUMN started_at;
